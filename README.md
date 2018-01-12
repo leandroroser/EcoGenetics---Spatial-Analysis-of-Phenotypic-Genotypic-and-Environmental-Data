@@ -5,13 +5,13 @@
 
 <br/>
 
-
 <h3><a href=https://leandroroser.github.io/EcoGenetics-Tutorial/> Tutorial </a></h3>
 
 <br/>
 
 <h3><a href=https://leandroroser.github.io/EcoGenetics-documentation/> Online documentation </a></h3>
 
+<br/>
 
 <h3>Installation of devel version:</h3>
 
