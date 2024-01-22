@@ -4,9 +4,14 @@
 \alias{eco.NDVI.post}
 \title{Postprocessing for NDVI and MSAVI2 temporal series of Landsat 5 and 7}
 \usage{
-eco.NDVI.post(tab, correct = c("COST", "DOS"), method = c("NDVI", "MSAVI2"),
-  datatype = c("FLT4S", "FLT8S", "INT4U", "INT4S", "INT2U", "INT2S", "INT1U",
-  "INT1S", "LOG1S"), what = c("mean", "max", "min", "var", "none"))
+eco.NDVI.post(
+  tab,
+  correct = c("COST", "DOS"),
+  method = c("NDVI", "MSAVI2"),
+  datatype = c("FLT4S", "FLT8S", "INT4U", "INT4S", "INT2U", "INT2S", "INT1U", "INT1S",
+    "LOG1S"),
+  what = c("mean", "max", "min", "var", "none")
+)
 }
 \arguments{
 \item{tab}{Table used with \code{\link{eco.NDVI}}.}

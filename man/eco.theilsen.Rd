@@ -5,8 +5,15 @@
 \title{Theil-sen regression for a raster time series, 
 with parallelization available}
 \usage{
-eco.theilsen(stacked, dates, adjust = "none", run_parallel = FALSE,
-  workers = NULL, physical = FALSE, cl_type = NULL)
+eco.theilsen(
+  stacked,
+  dates,
+  adjust = "none",
+  run_parallel = FALSE,
+  workers = NULL,
+  physical = FALSE,
+  cl_type = NULL
+)
 }
 \arguments{
 \item{stacked}{Stacked images ("RasterLayer"  or "RasterBrick").}

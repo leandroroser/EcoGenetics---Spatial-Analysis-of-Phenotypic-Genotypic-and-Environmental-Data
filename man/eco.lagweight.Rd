@@ -5,9 +5,21 @@
 \title{Obtention of a list of spatial weights for classes
 defined by inter-individual distances or nearest-neighbors}
 \usage{
-eco.lagweight(XY, int = NULL, smin = 0, smax = NULL, kmax = NULL,
-  nclass = NULL, seqvec = NULL, size = NULL, bin = c("sturges", "FD"),
-  cummulative = FALSE, row.sd = FALSE, self = FALSE, latlon = FALSE)
+eco.lagweight(
+  XY,
+  int = NULL,
+  smin = 0,
+  smax = NULL,
+  kmax = NULL,
+  nclass = NULL,
+  seqvec = NULL,
+  size = NULL,
+  bin = c("sturges", "FD"),
+  cummulative = FALSE,
+  row.sd = FALSE,
+  self = FALSE,
+  latlon = FALSE
+)
 }
 \arguments{
 \item{XY}{Matrix/data frame with projected coordinates.}

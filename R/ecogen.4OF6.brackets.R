@@ -63,7 +63,7 @@ setMethod("[", c("ecogen", "numericORmissing", "missing", "ANY"),
             }
             
             # length(i) == 0 or i == 0, return empty object
-            if(length(i) == 0 || i == 0) {
+            if(length(i) == 0 || (length(i) == 1 && i == 0)) {
              return(new("ecogen"))
             }
             

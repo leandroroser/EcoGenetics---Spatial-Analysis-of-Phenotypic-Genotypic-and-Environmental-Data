@@ -4,9 +4,17 @@
 \alias{eco.gsa}
 \title{Global spatial analysis}
 \usage{
-eco.gsa(Z, con, Y = NULL, method = c("I", "C", "CC", "JC"), nsim = 99,
-  alternative = c("auto", "two.sided", "greater", "less"), ploidy = 1,
-  adjust = "fdr", plotit = TRUE)
+eco.gsa(
+  Z,
+  con,
+  Y = NULL,
+  method = c("I", "C", "CC", "JC"),
+  nsim = 99,
+  alternative = c("auto", "two.sided", "greater", "less"),
+  ploidy = 1,
+  adjust = "fdr",
+  plotit = TRUE
+)
 }
 \arguments{
 \item{Z}{Vector with a variable, or matrix/data frame with variables in columns.}

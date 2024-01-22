@@ -4,8 +4,14 @@
 \alias{eco.split}
 \title{Splitting an ecogen object by group}
 \usage{
-eco.split(eco, hier, name = NULL, overwrite = FALSE, missing = c("0",
-  "NA", "MEAN"), asList = TRUE)
+eco.split(
+  eco,
+  hier,
+  name = NULL,
+  overwrite = FALSE,
+  missing = c("0", "NA", "MEAN"),
+  asList = TRUE
+)
 }
 \arguments{
 \item{eco}{Object of class "ecogen".}

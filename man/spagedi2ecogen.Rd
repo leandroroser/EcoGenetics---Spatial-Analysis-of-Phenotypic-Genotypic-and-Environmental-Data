@@ -4,8 +4,13 @@
 \alias{spagedi2ecogen}
 \title{Importing a SPAGeDi file, via conversion to ecogen}
 \usage{
-spagedi2ecogen(infile, sep = "", missCode = NULL, type = c("codominant",
-  "dominant"), ...)
+spagedi2ecogen(
+  infile,
+  sep = "",
+  missCode = NULL,
+  type = c("codominant", "dominant"),
+  ...
+)
 }
 \arguments{
 \item{infile}{Path to the SPAGeDi file.}

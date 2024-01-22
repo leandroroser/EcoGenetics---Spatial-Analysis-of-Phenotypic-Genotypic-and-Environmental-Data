@@ -276,7 +276,8 @@ setGeneric("eco.plotCorrelog",
         
         z <- z + ggplot2::geom_errorbar(ggplot2::aes(x = d.mean4, 
                                                      ymax = CI.sup, 
-                                                     ymin= CI.inf))
+                                                     ymin= CI.inf,
+                                                     linetype = "solid"))
       
         
       }
@@ -364,10 +365,10 @@ setGeneric("eco.plotCorrelog",
           themecol+
           ggplot2::theme(axis.text = ggplot2::element_text(size = axis.size), 
                          axis.title = ggplot2::element_text(size = title.size, hjust=0.5))+
-          ggplot2::geom_line(data=test.data, ggplot2::aes(x = mean, y = value, colour = variable), size = 1) + 
+          ggplot2::geom_line(data=test.data, ggplot2::aes(x = mean, y = value, colour = variable), linewidth = 1) + 
           ggplot2::geom_point(ggplot2::aes(x = d.mean2, y = obs2), size = p.size) +
-          ggplot2::geom_line(ggplot2::aes(x = d.mean, y = obs), size= 1.8) + 
-          ggplot2::geom_errorbar(ggplot2::aes(x = d.mean3, ymax = uppr, ymin= lwr), size=1) + 
+          ggplot2::geom_line(ggplot2::aes(x = d.mean, y = obs), linewidth= 1.8) + 
+          ggplot2::geom_errorbar(ggplot2::aes(x = d.mean3, ymax = uppr, ymin= lwr), linewidth=1) + 
           leyenda +
           ggplot2::xlab(xlabel) + 
           ggplot2::ylab(ylabel) + 
@@ -391,7 +392,7 @@ setGeneric("eco.plotCorrelog",
         # i am doing this to get the right plot with plotly (there are problems to overlap two plots)
         colnames(test.data)[1] <- "d.mean"
         multi.correlog <- ggplot2::ggplot(data=test.data, environment = localenv)+
-          ggplot2::geom_line(ggplot2::aes(x = d.mean, y = value, colour = variable), size = 1)+
+          ggplot2::geom_line(ggplot2::aes(x = d.mean, y = value, colour = variable), linewidth = 1)+
           themecol+
           ggplot2::theme(axis.text = ggplot2::element_text(size = axis.size), 
                          axis.title = ggplot2::element_text(size = title.size, hjust=0.5)) + leyenda + 
@@ -408,9 +409,9 @@ setGeneric("eco.plotCorrelog",
       
       
       mean.correlog <- ggplot2::ggplot(data = intervalos, ggplot2::aes(x = d.mean, y=obs))+
-        ggplot2::geom_line(ggplot2::aes(x = d.mean, y = obs), size= 1.8, colour="#F8766D")+
+        ggplot2::geom_line(ggplot2::aes(x = d.mean, y = obs), linewidth= 1.8, colour="#F8766D")+
         ggplot2::geom_point(size = p.size)+
-        ggplot2::geom_errorbar(ggplot2::aes(ymax = uppr, ymin= lwr), size=2) +
+        ggplot2::geom_errorbar(ggplot2::aes(ymax = uppr, ymin= lwr), linewidth=2) +
         ggplot2::ylab(ylabel)+
         ggplot2::xlab(xlabel)
         
@@ -756,7 +757,7 @@ setGeneric("eco.plotCorrelogB",
               
               # i am doing this to get the right plot with plotly (there are problems to overlap two plots)
               z <- ggplot2::ggplot(data=test.data, environment = localenv)+
-                ggplot2::geom_line(ggplot2::aes(x = angle, y = obs, colour = dist), size = 1)+
+                ggplot2::geom_line(ggplot2::aes(x = angle, y = obs, colour = dist), linewidth = 1)+
                 themecol+
                 ggplot2::theme(axis.text = ggplot2::element_text(size = axis.size), 
                                axis.title = ggplot2::element_text(size = title.size, hjust=0.5)) + leyenda + 

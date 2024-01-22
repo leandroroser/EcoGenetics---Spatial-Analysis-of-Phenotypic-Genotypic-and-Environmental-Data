@@ -4,8 +4,16 @@
 \alias{eco.fill_ecogen_with_df}
 \title{Importation of data frames to ecogen}
 \usage{
-eco.fill_ecogen_with_df(from, pop, pop_levels, XY = NULL, P = NULL,
-  E = NULL, C = NULL, bind_columns = FALSE)
+eco.fill_ecogen_with_df(
+  from,
+  pop,
+  pop_levels,
+  XY = NULL,
+  P = NULL,
+  E = NULL,
+  C = NULL,
+  bind_columns = FALSE
+)
 }
 \arguments{
 \item{from}{ecogen object}

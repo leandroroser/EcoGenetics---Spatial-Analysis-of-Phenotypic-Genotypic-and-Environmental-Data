@@ -4,12 +4,29 @@
 \alias{eco.cormantel}
 \title{Mantel and partial Mantel correlograms, omnidirectional and directional}
 \usage{
-eco.cormantel(M, XY, MC = NULL, int = NULL, smin = 0, smax = NULL,
-  nclass = NULL, seqvec = NULL, size = NULL, bin = c("sturges", "FD"),
-  nsim = 99, classM = c("dist", "simil"), method = c("pearson",
-  "spearman", "kendall"), test = c("permutation", "bootstrap"),
-  alternative = c("auto", "two.sided", "greater", "less"), adjust = "holm",
-  sequential = TRUE, latlon = FALSE, angle = NULL, as.deg = TRUE, ...)
+eco.cormantel(
+  M,
+  XY,
+  MC = NULL,
+  int = NULL,
+  smin = 0,
+  smax = NULL,
+  nclass = NULL,
+  seqvec = NULL,
+  size = NULL,
+  bin = c("sturges", "FD"),
+  nsim = 99,
+  classM = c("dist", "simil"),
+  method = c("pearson", "spearman", "kendall"),
+  test = c("permutation", "bootstrap"),
+  alternative = c("auto", "two.sided", "greater", "less"),
+  adjust = "holm",
+  sequential = TRUE,
+  latlon = FALSE,
+  angle = NULL,
+  as.deg = TRUE,
+  ...
+)
 }
 \arguments{
 \item{M}{Distance or similarity matrix.}

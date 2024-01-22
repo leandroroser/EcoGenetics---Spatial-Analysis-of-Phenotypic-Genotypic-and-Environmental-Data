@@ -5,9 +5,15 @@
 \title{Chi-square and Fisher's exact test for association of loci and alleles 
 with a factor}
 \usage{
-eco.association(eco, assoc = c("within", "between"), x,
-  method = c("fisher.test", "chisq.test"), nrep = 99, adjust = "none",
-  ndig = NA)
+eco.association(
+  eco,
+  assoc = c("within", "between"),
+  x,
+  method = c("fisher.test", "chisq.test"),
+  nrep = 99,
+  adjust = "none",
+  ndig = NA
+)
 }
 \arguments{
 \item{eco}{Object of class "ecogen".}

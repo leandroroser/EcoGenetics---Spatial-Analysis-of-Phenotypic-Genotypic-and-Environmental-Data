@@ -4,8 +4,16 @@
 \alias{int.crosscor}
 \title{Cross correlation. Internal.}
 \usage{
-int.crosscor(Z, Y, con, nsim, alternative, test = "permutation",
-  adjust.n = FALSE, plotit)
+int.crosscor(
+  Z,
+  Y,
+  con,
+  nsim,
+  alternative,
+  test = "permutation",
+  adjust.n = FALSE,
+  plotit
+)
 }
 \arguments{
 \item{Z}{vector, matrix or data frame.

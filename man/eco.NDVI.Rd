@@ -5,9 +5,14 @@
 \title{Generation of atmospherically corrected NDVI and MSAVI2 images for 
 temporal series of Landsat 5 and 7}
 \usage{
-eco.NDVI(tab, correct = c("COST", "DOS"), method = c("NDVI", "MSAVI2"),
-  landsat = c("LT5", "LT7.L", "LT7.H"), datatype = c("FLT4S", "FLT8S",
-  "INT4U", "INT4S", "INT2U", "INT2S", "INT1U", "INT1S", "LOG1S"))
+eco.NDVI(
+  tab,
+  correct = c("COST", "DOS"),
+  method = c("NDVI", "MSAVI2"),
+  landsat = c("LT5", "LT7.L", "LT7.H"),
+  datatype = c("FLT4S", "FLT8S", "INT4U", "INT4S", "INT2U", "INT2S", "INT1U", "INT1S",
+    "LOG1S")
+)
 }
 \arguments{
 \item{tab}{data.frame with 7 columns: The date of the images

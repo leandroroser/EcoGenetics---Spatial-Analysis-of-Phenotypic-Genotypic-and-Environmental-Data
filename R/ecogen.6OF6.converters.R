@@ -438,7 +438,7 @@ setGeneric("ecogen2gstudio",
                  class(dat[, i]) <- "locus"
                  #out[[i]] <- gstudio::locus(dat[, i, drop = FALSE], type = "separated")
                }
-               dat[is.na(dat)] <- locus(NA)
+               dat[is.na(dat)] <- gstudio::locus(NA)
                colnames(dat) <- colnames(from@G)
                
                #dominant case
@@ -448,7 +448,7 @@ setGeneric("ecogen2gstudio",
                for(i in 1:ncol(dat)) {
                  class(dat[, i]) = "locus"
                }
-               dat[is.na(dat)] <- locus(NA)
+               dat[is.na(dat)] <- gstudio::locus(NA)
                colnames(dat) <- colnames(from@G)
              }
              
@@ -836,10 +836,10 @@ setGeneric("ecogen2spagedi",
   cat(final, sep = "\t")
   
   if(!is.null(distmat)) {
-    if(class(distmat) == "dist") {
+    if(inherits(distmat, "dist")) {
       distmat <- as.matrix(distmat)
     } 
-    if(class(distmat) != "matrix" & class(distmat) != "data.frame") {
+    if(!(inherits(distmat, "matrix") || inherits(distmat, "data.frame"))) {
       stop("invalid distance matrix format (It should be of class: dist, matrix or data.frame")
     }
     distnames <- rownames(distmat)

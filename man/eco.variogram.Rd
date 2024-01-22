@@ -4,9 +4,20 @@
 \alias{eco.variogram}
 \title{Empirical variogram}
 \usage{
-eco.variogram(Z, XY, int = NULL, smin = 0, smax = NULL, nclass = NULL,
-  seqvec = NULL, size = NULL, bin = c("sturges", "FD"), row.sd = FALSE,
-  latlon = FALSE, angle = NULL)
+eco.variogram(
+  Z,
+  XY,
+  int = NULL,
+  smin = 0,
+  smax = NULL,
+  nclass = NULL,
+  seqvec = NULL,
+  size = NULL,
+  bin = c("sturges", "FD"),
+  row.sd = FALSE,
+  latlon = FALSE,
+  angle = NULL
+)
 }
 \arguments{
 \item{Z}{Vector for the analysis.}

@@ -326,7 +326,7 @@ setGeneric("eco.lagweight",
                method <- "kmax"
                smin <- NULL
                cummulative <- TRUE
-               if(class(XY) == "dist") {
+               if(inherits(XY, "dist")) {
                  stop("XY is a distance matrix. kmax require a matrix XY with coordinates")
                }
                for(i in 1:kmax) {

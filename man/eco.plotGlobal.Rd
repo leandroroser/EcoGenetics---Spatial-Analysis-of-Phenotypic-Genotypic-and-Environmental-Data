@@ -4,9 +4,17 @@
 \alias{eco.plotGlobal}
 \title{GSA plot methods}
 \usage{
-eco.plotGlobal(input, interactivePlot = TRUE, background = c("grey",
-  "white"), xlabel = NULL, ylabel = NULL, title = NULL, legend = TRUE,
-  rescaled = FALSE, alpha = 0.05)
+eco.plotGlobal(
+  input,
+  interactivePlot = FALSE,
+  background = c("grey", "white"),
+  xlabel = NULL,
+  ylabel = NULL,
+  title = NULL,
+  legend = TRUE,
+  rescaled = FALSE,
+  alpha = 0.05
+)
 }
 \arguments{
 \item{input}{eco.gsa object}

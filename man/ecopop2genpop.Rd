@@ -14,8 +14,6 @@ genpop2ecopop(from)
 }
 \description{
 These functions export from ecopop to genpop and viceversa
-
-genpop2ecpop
 }
 \examples{
 

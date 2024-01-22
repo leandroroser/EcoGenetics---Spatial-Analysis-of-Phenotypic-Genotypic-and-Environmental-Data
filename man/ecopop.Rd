@@ -4,11 +4,20 @@
 \alias{ecopop}
 \title{Creating a new ecopop object}
 \usage{
-ecopop(XY = data.frame(), P = data.frame(), AF = data.frame(),
-  E = data.frame(), S = data.frame(), C = data.frame(),
-  pop_names_column = 1L, ploidy, type = c("codominant", "dominant"),
-  order.df = FALSE, allele_data = c("counts", "frequencies"),
-  lock.rows = TRUE)
+ecopop(
+  XY = data.frame(),
+  P = data.frame(),
+  AF = data.frame(),
+  E = data.frame(),
+  S = data.frame(),
+  C = data.frame(),
+  pop_names_column = 1L,
+  ploidy,
+  type = c("codominant", "dominant"),
+  order.df = FALSE,
+  allele_data = c("counts", "frequencies"),
+  lock.rows = TRUE
+)
 }
 \arguments{
 \item{XY}{Data frame with n rows (populations) and m columns (coordinates).}

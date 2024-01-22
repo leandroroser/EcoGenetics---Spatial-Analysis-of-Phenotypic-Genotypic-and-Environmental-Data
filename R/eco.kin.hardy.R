@@ -11,13 +11,14 @@
 
 eco.kin.hardy <- function(x, fi) { 
   
-  if(class(x) == "genind") {
+  if(inherits(x, "genind")) {
     mata <- x@tab
-  } else if(class(x) == "ecogen") {
+  } else if(inherits(x, "ecogen")) {
     mata <- x@A
-  } else if(class(x) == "matrix" || class(x) == "data.frame") {
+  } else if(inherits(x, "matrix") || inherits(x, "data.frame")) {
     mata <- x
   }
+  
   
   nrow_mata <- nrow(mata)
   ncol_mata <- ncol(mata)

@@ -4,8 +4,11 @@
 \alias{aue.image2df}
 \title{Transforming a raster into a data frame with cartesian coordinates}
 \usage{
-aue.image2df(mat, origin = c("upperleft", "lowerleft"),
-  out = c("data.frame", "matrix"))
+aue.image2df(
+  mat,
+  origin = c("upperleft", "lowerleft"),
+  out = c("data.frame", "matrix")
+)
 }
 \arguments{
 \item{mat}{Input raster matrix.}

@@ -4,8 +4,14 @@
 \alias{eco.slide.matrix}
 \title{Sliding window for matrix data}
 \usage{
-eco.slide.matrix(mat, r, slide, fun, window = c("square", "circle"),
-  within = TRUE)
+eco.slide.matrix(
+  mat,
+  r,
+  slide,
+  fun,
+  window = c("square", "circle"),
+  within = TRUE
+)
 }
 \arguments{
 \item{mat}{Input raster matrix.}

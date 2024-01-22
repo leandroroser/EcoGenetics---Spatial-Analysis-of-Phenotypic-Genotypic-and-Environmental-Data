@@ -116,12 +116,12 @@ setGeneric("eco.mantel",
              method <- match.arg(method)
              truncMat <- match.arg(truncMat)
              
-             control <- c(class(d1), class(d2), class(dc)) == "dist"
+             control <- c(inherits(d1, "dist"), inherits(d2, "dist"), inherits(dc, "dist"))
              sumcontrol<- sum(control)
              
              
              if(!is.null(con)) {
-               if(class(con) != "eco.weight") {
+               if(!inherits(con, "eco.weight")) {
                  stop("con must be an eco.weight object")
                }
                if(!is.null(thres) && (!is.numeric(thres) ||length(thres) > 1)) {

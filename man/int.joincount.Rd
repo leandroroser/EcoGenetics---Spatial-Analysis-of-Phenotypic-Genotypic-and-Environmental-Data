@@ -4,8 +4,16 @@
 \alias{int.joincount}
 \title{Join-count statistic, internal.}
 \usage{
-int.joincount(Z, con, nsim, alternative, test = "permutation",
-  adjust.n = FALSE, adjustjc = "none", plotit)
+int.joincount(
+  Z,
+  con,
+  nsim,
+  alternative,
+  test = "permutation",
+  adjust.n = FALSE,
+  adjustjc = "none",
+  plotit
+)
 }
 \arguments{
 \item{Z}{Vector, matrix or data frame.}

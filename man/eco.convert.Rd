@@ -4,10 +4,17 @@
 \alias{eco.convert}
 \title{Conversion utility for genetic data}
 \usage{
-eco.convert(X, input = c("matrix", "alleles.matrix", "list", "alleles.list"),
+eco.convert(
+  X,
+  input = c("matrix", "alleles.matrix", "list", "alleles.list"),
   output = c("matrix", "alleles.matrix", "list", "alleles.list"),
-  ncod = NULL, ploidy = 2, sep.in, sep.out, chk.names = TRUE,
-  chk.plocod = TRUE)
+  ncod = NULL,
+  ploidy = 2,
+  sep.in,
+  sep.out,
+  chk.names = TRUE,
+  chk.plocod = TRUE
+)
 }
 \arguments{
 \item{X}{Input data.}

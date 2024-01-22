@@ -426,11 +426,11 @@ aue.fqal <- function(eco, grp = NULL) {
 
 aue.access <- function(ecoslot, X) {
   
-  if(class(X) == "name") {
+  if(inherits(X, "name")) {
     class(X) <- "character"
   }
   
-  if(class(ecoslot) == "name") {
+  if(inherits(ecoslot, "name")) {
     class(ecoslot) <- "character"
   }
   
@@ -604,8 +604,8 @@ aue.circle.w <- function(mat, x0, y0) {
 
 aue.image2df <- function(mat, origin = c("upperleft", "lowerleft"), out = c("data.frame", "matrix")) {
   
-  if(class(mat) != "matrix") {
-  if(class(mat) == "data.frame") {
+  if(!inherits(mat, "matrix")) {
+  if(inherits(mat, "data.frame")) {
   mat <- as.matrix(mat)
   } else {
     stop("the input must be of class <matrix> or <data.frame>")
@@ -890,7 +890,7 @@ aue.aggregated_df <- function(X, hier, fun, factor_to_counts = FALSE, ...) {
   }
   if(factor_to_counts) {
   aggregator_function <- function(x, ...) {
-    if(class(x[,1]) == "factor") {
+    if(inherits(x[,1], "factor")) {
       return(aue.split_categorical(x[, 1, drop = FALSE], hier))
     } else {
       out <- data.frame(tapply(x[, 1, drop = TRUE], hier, function(y) fun(y, ...)), 

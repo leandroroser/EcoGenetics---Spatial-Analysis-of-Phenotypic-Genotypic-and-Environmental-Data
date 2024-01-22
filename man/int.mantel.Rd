@@ -4,8 +4,18 @@
 \alias{int.mantel}
 \title{Mantel and partial Mantel tests, internal.}
 \usage{
-int.mantel(d1, d2, dc, nsim, test, alternative = "auto", plotit = FALSE,
-  method = "pearson", na.omit = FALSE, ...)
+int.mantel(
+  d1,
+  d2,
+  dc,
+  nsim,
+  test,
+  alternative = "auto",
+  plotit = FALSE,
+  method = "pearson",
+  na.omit = FALSE,
+  ...
+)
 }
 \arguments{
 \item{d1}{distance matrix.}

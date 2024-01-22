@@ -4,12 +4,28 @@
 \alias{ecogen2spagedi}
 \title{Exporting an ecogen genetic data frame into SPAGeDi format}
 \usage{
-ecogen2spagedi(eco, pop = NULL, ndig = NULL, dir = "",
-  outName = "infile.spagedi.txt", smin = 0, smax = NULL, int = NULL,
-  nclass = NULL, seqvec = NULL, size = NULL, bin = c("sturges", "FD"),
-  distmat = NULL, latlon = FALSE, to_numeric = FALSE, nout = 3,
-  recode = c("all", "column", "paired"), replace_in = NULL,
-  replace_out = NULL, ...)
+ecogen2spagedi(
+  eco,
+  pop = NULL,
+  ndig = NULL,
+  dir = "",
+  outName = "infile.spagedi.txt",
+  smin = 0,
+  smax = NULL,
+  int = NULL,
+  nclass = NULL,
+  seqvec = NULL,
+  size = NULL,
+  bin = c("sturges", "FD"),
+  distmat = NULL,
+  latlon = FALSE,
+  to_numeric = FALSE,
+  nout = 3,
+  recode = c("all", "column", "paired"),
+  replace_in = NULL,
+  replace_out = NULL,
+  ...
+)
 }
 \arguments{
 \item{eco}{Object of class "ecogen".}

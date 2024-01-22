@@ -4,11 +4,19 @@
 \alias{eco.lsa}
 \title{Local spatial analysis}
 \usage{
-eco.lsa(var, con, method = c("G*", "G", "I", "C"), zerocon = NA,
-  nsim = 99, conditional = c("auto", "TRUE", "FALSE"),
-  test = c("permutation", "bootstrap"), alternative = c("auto", "two.sided",
-  "greater", "less"), adjust = "none", multi = c("matrix", "list"),
-  pop = NULL)
+eco.lsa(
+  var,
+  con,
+  method = c("G*", "G", "I", "C"),
+  zerocon = NA,
+  nsim = 99,
+  conditional = c("auto", "TRUE", "FALSE"),
+  test = c("permutation", "bootstrap"),
+  alternative = c("auto", "two.sided", "greater", "less"),
+  adjust = "none",
+  multi = c("matrix", "list"),
+  pop = NULL
+)
 }
 \arguments{
 \item{var}{Vector, matrix or data frame for the analysis. Multiple variables in columns.}

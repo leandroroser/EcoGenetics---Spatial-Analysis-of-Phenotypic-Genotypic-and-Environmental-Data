@@ -4,8 +4,17 @@
 \alias{int.break}
 \title{breaks obtention}
 \usage{
-int.break(XY, int = NULL, smin = 0, smax = NULL, seqvec = NULL,
-  nclass = NULL, size = NULL, bin = c("FD", "sturges"), latlon = FALSE)
+int.break(
+  XY,
+  int = NULL,
+  smin = 0,
+  smax = NULL,
+  seqvec = NULL,
+  nclass = NULL,
+  size = NULL,
+  bin = c("FD", "sturges"),
+  latlon = FALSE
+)
 }
 \arguments{
 \item{XY}{data frame or matrix with individual's position.}

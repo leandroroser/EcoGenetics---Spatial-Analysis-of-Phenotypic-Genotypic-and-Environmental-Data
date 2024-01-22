@@ -4,8 +4,7 @@
 \alias{aue.sort}
 \title{Ordering the content of cells in a matrix. Ordering alleles in a genetic matrix.}
 \usage{
-aue.sort(X, ncod = NULL, ploidy = 2, sep.loc = "", chk.plocod = TRUE,
-  ...)
+aue.sort(X, ncod = NULL, ploidy = 2, sep.loc = "", chk.plocod = TRUE, ...)
 }
 \arguments{
 \item{X}{Any matrix with content to order.}

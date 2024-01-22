@@ -4,10 +4,19 @@
 \alias{eco.mantel}
 \title{Mantel and partial Mantel tests, with truncation option}
 \usage{
-eco.mantel(d1, d2, dc = NULL, con = NULL, thres = NULL,
-  truncMat = c("d2", "d1", "dc"), method = c("pearson", "spearman",
-  "kendall"), nsim = 99, alternative = c("auto", "two.sided", "less",
-  "greater"), plotit = TRUE, ...)
+eco.mantel(
+  d1,
+  d2,
+  dc = NULL,
+  con = NULL,
+  thres = NULL,
+  truncMat = c("d2", "d1", "dc"),
+  method = c("pearson", "spearman", "kendall"),
+  nsim = 99,
+  alternative = c("auto", "two.sided", "less", "greater"),
+  plotit = TRUE,
+  ...
+)
 }
 \arguments{
 \item{d1}{Distance matrix.}

@@ -6,7 +6,7 @@
 
 #'@import ggplot2
 #'@import methods
-#'@import rgdal
+#'@import terra
 #'@import reshape2
 #'@importFrom SoDA geoXY
 #'@importFrom grDevices nclass.FD

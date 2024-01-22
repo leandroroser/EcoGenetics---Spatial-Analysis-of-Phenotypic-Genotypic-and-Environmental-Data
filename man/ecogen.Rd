@@ -4,13 +4,28 @@
 \alias{ecogen}
 \title{Creating a new ecogen object}
 \usage{
-ecogen(XY = data.frame(), P = data.frame(), G = data.frame(),
-  E = data.frame(), S = data.frame(), C = data.frame(),
-  G.processed = TRUE, order.G = FALSE, ploidy = 2,
-  type = c("codominant", "dominant"), sep = "", ncod = NULL,
-  missing = c("NA", "0", "MEAN"), NA.char = "NA", poly.level = 5,
-  rm.empty.ind = FALSE, order.df = TRUE, set.names = NULL,
-  valid.names = FALSE, lock.rows = TRUE)
+ecogen(
+  XY = data.frame(),
+  P = data.frame(),
+  G = data.frame(),
+  E = data.frame(),
+  S = data.frame(),
+  C = data.frame(),
+  G.processed = TRUE,
+  order.G = FALSE,
+  ploidy = 2,
+  type = c("codominant", "dominant"),
+  sep = "",
+  ncod = NULL,
+  missing = c("NA", "0", "MEAN"),
+  NA.char = "NA",
+  poly.level = 5,
+  rm.empty.ind = FALSE,
+  order.df = TRUE,
+  set.names = NULL,
+  valid.names = FALSE,
+  lock.rows = TRUE
+)
 }
 \arguments{
 \item{XY}{Data frame with m columns (coordinates) and n rows (individuals).}
@@ -210,7 +225,5 @@ new_locked <- eco.lock(eco_unlocked) # valid now
 
 }
 \author{
-Leandro Roser \email{learoser@gmail.com}
-
 Leandro Roser \email{learoser@gmail.com}
 }

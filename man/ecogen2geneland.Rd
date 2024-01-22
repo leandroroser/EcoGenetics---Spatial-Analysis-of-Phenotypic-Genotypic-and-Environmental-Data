@@ -4,9 +4,18 @@
 \alias{ecogen2geneland}
 \title{Creating input data for Geneland with an ecogen object}
 \usage{
-ecogen2geneland(eco, dir = "", ncod = NULL, ploidy = 2,
-  to_numeric = FALSE, nout = 3, recode = c("all", "column", "paired"),
-  replace_in = NULL, replace_out = NULL, ...)
+ecogen2geneland(
+  eco,
+  dir = "",
+  ncod = NULL,
+  ploidy = 2,
+  to_numeric = FALSE,
+  nout = 3,
+  recode = c("all", "column", "paired"),
+  replace_in = NULL,
+  replace_out = NULL,
+  ...
+)
 }
 \arguments{
 \item{eco}{Object of class "ecogen"}

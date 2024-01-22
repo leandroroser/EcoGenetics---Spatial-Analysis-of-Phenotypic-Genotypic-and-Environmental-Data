@@ -4,8 +4,15 @@
 \alias{int.moran}
 \title{Moran internal.}
 \usage{
-int.moran(Z, con, nsim, alternative, test = "permutation", adjust.n = FALSE,
-  plotit)
+int.moran(
+  Z,
+  con,
+  nsim,
+  alternative,
+  test = "permutation",
+  adjust.n = FALSE,
+  plotit
+)
 }
 \arguments{
 \item{Z}{Vector, matrix or data frame.}

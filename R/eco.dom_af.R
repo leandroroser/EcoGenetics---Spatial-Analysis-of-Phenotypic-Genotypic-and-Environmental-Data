@@ -23,19 +23,20 @@ setGeneric("eco.dom_af", function(x, method = c("zhivor", "zhivonu", "rawfreq"))
   
   # get matrix matr with 'allele counts'
   
-  if (class(x) == "genpop") {
+  if (inherits(x, "genpop")) {
     matr <- x@tab
-  } else if (class(x) == "ecopop") {
+  } else if(inherits(x, "ecopop")) {
     if (x@INT@allele_data == "frequency") {
       stop("ecopop object with genetic data as counts needed, 
-           but this object has allele frequencies")
+         but this object has allele frequencies")
     }
     matr <- x@AF
-    } else if (class(x) == "matrix" || class(x) == "data.frame") {
-      matr <- x
-    } else {
-      stop("object of invalid class")
+  } else if(inherits(x, "matrix") || inherits(x, "data.frame")) {
+    matr <- x
+  } else {
+    stop("object of invalid class")
   }
+  
   
   
   # frsq is at the beginning = matr

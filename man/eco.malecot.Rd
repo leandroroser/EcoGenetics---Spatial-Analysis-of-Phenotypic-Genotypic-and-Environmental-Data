@@ -4,15 +4,35 @@
 \alias{eco.malecot}
 \title{Global and local kinship analysis}
 \usage{
-eco.malecot(eco, method = c("global", "local"), kinmatrix = NULL,
-  int = NULL, smin = 0, smax = NULL, nclass = NULL, kmax = NULL,
-  seqvec = NULL, size = NULL, type = c("knearest", "radialdist"),
-  cubic = TRUE, testclass.b = TRUE, testmantel.b = TRUE,
-  jackknife = TRUE, cummulative = FALSE, normLocal = TRUE, nsim = 99,
-  test = c("permutation", "bootstrap"), alternative = c("auto", "two.sided",
-  "greater", "less"), sequential = TRUE, conditional = c("AUTO", "TRUE",
-  "FALSE"), bin = c("sturges", "FD"), row.sd = FALSE, adjust = "holm",
-  latlon = FALSE, angle = NULL)
+eco.malecot(
+  eco,
+  method = c("global", "local"),
+  kinmatrix = NULL,
+  int = NULL,
+  smin = 0,
+  smax = NULL,
+  nclass = NULL,
+  kmax = NULL,
+  seqvec = NULL,
+  size = NULL,
+  type = c("knearest", "radialdist"),
+  cubic = TRUE,
+  testclass.b = TRUE,
+  testmantel.b = TRUE,
+  jackknife = TRUE,
+  cummulative = FALSE,
+  normLocal = TRUE,
+  nsim = 99,
+  test = c("permutation", "bootstrap"),
+  alternative = c("auto", "two.sided", "greater", "less"),
+  sequential = TRUE,
+  conditional = c("AUTO", "TRUE", "FALSE"),
+  bin = c("sturges", "FD"),
+  row.sd = FALSE,
+  adjust = "holm",
+  latlon = FALSE,
+  angle = NULL
+)
 }
 \arguments{
 \item{eco}{Object of class ecogen.}

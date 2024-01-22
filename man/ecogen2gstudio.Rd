@@ -7,8 +7,13 @@
 \usage{
 ecogen2gstudio(from, type = c("codominant", "dominant"))
 
-gstudio2ecogen(from, ID = "ID", lat = "Latitude", lon = "Longitude",
-  struct = NULL)
+gstudio2ecogen(
+  from,
+  ID = "ID",
+  lat = "Latitude",
+  lon = "Longitude",
+  struct = NULL
+)
 }
 \arguments{
 \item{from}{Input object of class "ecogen" or "gstudio" (depending the direction of conversion)}
@@ -26,8 +31,6 @@ gstudio2ecogen(from, ID = "ID", lat = "Latitude", lon = "Longitude",
 \description{
 These functions converts the genetic 
 data of an ecogen object in a gstudio data frame or viceversa.
-
-Conversion from gstudio to ecogen
 }
 \examples{
 

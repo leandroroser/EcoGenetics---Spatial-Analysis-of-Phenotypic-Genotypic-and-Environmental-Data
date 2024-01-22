@@ -4,8 +4,15 @@
 \alias{int.geary}
 \title{Geary internal.}
 \usage{
-int.geary(Z, con, nsim, alternative, test = "permutation", adjust.n = FALSE,
-  plotit)
+int.geary(
+  Z,
+  con,
+  nsim,
+  alternative,
+  test = "permutation",
+  adjust.n = FALSE,
+  plotit
+)
 }
 \arguments{
 \item{Z}{Vector, matrix or data frame.}

@@ -4,8 +4,14 @@
 \alias{int.check.ncod}
 \title{Check ploidy and number of digits per allele}
 \usage{
-int.check.ncod(X, ploidy, ncod = NULL, sep = "", numeric.dat = FALSE,
-  strict_nchar = FALSE)
+int.check.ncod(
+  X,
+  ploidy,
+  ncod = NULL,
+  sep = "",
+  numeric.dat = FALSE,
+  strict_nchar = FALSE
+)
 }
 \arguments{
 \item{X}{Matrix to check.}

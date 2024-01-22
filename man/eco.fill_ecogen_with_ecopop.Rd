@@ -4,8 +4,13 @@
 \alias{eco.fill_ecogen_with_ecopop}
 \title{Importation of ecopop to ecogen}
 \usage{
-eco.fill_ecogen_with_ecopop(from, to, pop, what = c("all", "XY", "P", "E",
-  "C"), bind_columns = FALSE)
+eco.fill_ecogen_with_ecopop(
+  from,
+  to,
+  pop,
+  what = c("all", "XY", "P", "E", "C"),
+  bind_columns = FALSE
+)
 }
 \arguments{
 \item{from}{ecopop object.}

@@ -4,8 +4,12 @@
 \alias{eco.formula}
 \title{Formula construction for ecogen objects}
 \usage{
-eco.formula(eco, formula, out.mode = c("formula", "expression"),
-  expand.tables = "+")
+eco.formula(
+  eco,
+  formula,
+  out.mode = c("formula", "expression"),
+  expand.tables = "+"
+)
 }
 \arguments{
 \item{eco}{Object of class "ecogen".}

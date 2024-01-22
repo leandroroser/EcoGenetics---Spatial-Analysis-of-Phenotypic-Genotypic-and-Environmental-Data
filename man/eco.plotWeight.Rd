@@ -4,9 +4,17 @@
 \alias{eco.plotWeight}
 \title{Plot for a connection network}
 \usage{
-eco.plotWeight(x, type = c("simple", "igraph", "edgebundle", "network"),
-  group = NULL, fontSize = 10, ebColor = NULL, vertex.size = 10,
-  vertex.label = NA, bounded = FALSE, ...)
+eco.plotWeight(
+  x,
+  type = c("simple", "igraph", "edgebundle", "network"),
+  group = NULL,
+  fontSize = 10,
+  ebColor = NULL,
+  vertex.size = 10,
+  vertex.label = NA,
+  bounded = FALSE,
+  ...
+)
 }
 \arguments{
 \item{x}{Connection network}

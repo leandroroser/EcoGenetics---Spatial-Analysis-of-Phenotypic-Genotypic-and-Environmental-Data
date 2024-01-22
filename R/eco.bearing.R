@@ -83,7 +83,7 @@ setGeneric("eco.bearing", function(con, theta, XY = NULL, latlon = FALSE) {
   
   angle <- aue.dataAngle(con@XY)
   
-  if(class(con) == "eco.weight") {
+  if(inherits(con, "eco.weight")) {
     if(length(theta) > 1) {
       stop("angle must be a vector of length 1")
     }

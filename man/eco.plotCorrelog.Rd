@@ -4,12 +4,27 @@
 \alias{eco.plotCorrelog}
 \title{eco.plotCorrelog}
 \usage{
-eco.plotCorrelog(x, var = NULL, xlabel = NULL, ylabel = NULL,
-  title = NULL, legend = TRUE, background = c("grey", "white"),
-  errorbar = FALSE, intervals = TRUE, significant.S = TRUE,
-  significant.M = FALSE, xlim = NULL, ylim = NULL, nsim = 999,
-  interactivePlot = TRUE, meanplot = TRUE, randtest = c("permutation",
-  "bootstrap", "none"), alpha = 0.05, quiet = FALSE)
+eco.plotCorrelog(
+  x,
+  var = NULL,
+  xlabel = NULL,
+  ylabel = NULL,
+  title = NULL,
+  legend = TRUE,
+  background = c("grey", "white"),
+  errorbar = FALSE,
+  intervals = TRUE,
+  significant.S = TRUE,
+  significant.M = FALSE,
+  xlim = NULL,
+  ylim = NULL,
+  nsim = 999,
+  interactivePlot = TRUE,
+  meanplot = TRUE,
+  randtest = c("permutation", "bootstrap", "none"),
+  alpha = 0.05,
+  quiet = FALSE
+)
 }
 \arguments{
 \item{x}{Result of correlogram or variogram analysis}

@@ -4,9 +4,15 @@
 \alias{int.random.test}
 \title{random test}
 \usage{
-int.random.test(repsim = NULL, obs, nsim, test = c("permutation",
-  "bootstrap"), alternative = c("auto", "two.sided", "greater", "less"),
-  adjust = "none", alpha = 0.05)
+int.random.test(
+  repsim = NULL,
+  obs,
+  nsim,
+  test = c("permutation", "bootstrap"),
+  alternative = c("auto", "two.sided", "greater", "less"),
+  adjust = "none",
+  alpha = 0.05
+)
 }
 \description{
 random test

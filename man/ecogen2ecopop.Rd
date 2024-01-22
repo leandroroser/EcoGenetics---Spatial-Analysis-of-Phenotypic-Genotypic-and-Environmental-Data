@@ -4,8 +4,13 @@
 \alias{ecogen2ecopop}
 \title{Conversion form ecogen to ecopop}
 \usage{
-ecogen2ecopop(from, hier, factor_to_counts = TRUE, aggregator = function(x)
-  mean(x, na.rm = TRUE), allele_data = c("counts", "frequencies"))
+ecogen2ecopop(
+  from,
+  hier,
+  factor_to_counts = TRUE,
+  aggregator = function(x) mean(x, na.rm = TRUE),
+  allele_data = c("counts", "frequencies")
+)
 }
 \arguments{
 \item{from}{Object of class "ecogen"}

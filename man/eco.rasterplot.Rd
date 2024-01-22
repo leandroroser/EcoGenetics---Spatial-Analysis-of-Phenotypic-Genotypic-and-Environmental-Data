@@ -4,9 +4,18 @@
 \alias{eco.rasterplot}
 \title{Rasterplot graphs}
 \usage{
-eco.rasterplot(x, filter = NULL, condition = NULL, grp = NULL,
-  limits = NULL, title = NULL, z.name = NULL, vertical = TRUE,
-  interactivePlot = TRUE, ...)
+eco.rasterplot(
+  x,
+  filter = NULL,
+  condition = NULL,
+  grp = NULL,
+  limits = NULL,
+  title = NULL,
+  z.name = NULL,
+  vertical = TRUE,
+  interactivePlot = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{Data matrix (raster)}

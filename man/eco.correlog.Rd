@@ -4,13 +4,31 @@
 \alias{eco.correlog}
 \title{Moran's I, Geary's C and bivariate Moran's I correlograms, omnidirectional and directional}
 \usage{
-eco.correlog(Z, XY, Y = NULL, int = NULL, smin = 0, smax = NULL,
-  nclass = NULL, size = NULL, seqvec = NULL, method = c("I", "C", "CC"),
-  nsim = 99, test = c("permutation", "bootstrap"), alpha = 0.05,
-  alternative = c("auto", "two.sided", "greater", "less"), adjust = "holm",
-  sequential = ifelse((as.deg), FALSE, TRUE), include.zero = TRUE,
-  cummulative = FALSE, bin = c("sturges", "FD"), row.sd = FALSE,
-  latlon = FALSE, angle = NULL, as.deg = TRUE)
+eco.correlog(
+  Z,
+  XY,
+  Y = NULL,
+  int = NULL,
+  smin = 0,
+  smax = NULL,
+  nclass = NULL,
+  size = NULL,
+  seqvec = NULL,
+  method = c("I", "C", "CC"),
+  nsim = 99,
+  test = c("permutation", "bootstrap"),
+  alpha = 0.05,
+  alternative = c("auto", "two.sided", "greater", "less"),
+  adjust = "holm",
+  sequential = ifelse((as.deg), FALSE, TRUE),
+  include.zero = TRUE,
+  cummulative = FALSE,
+  bin = c("sturges", "FD"),
+  row.sd = FALSE,
+  latlon = FALSE,
+  angle = NULL,
+  as.deg = TRUE
+)
 }
 \arguments{
 \item{Z}{Vector, matrix or data frame with variable/s

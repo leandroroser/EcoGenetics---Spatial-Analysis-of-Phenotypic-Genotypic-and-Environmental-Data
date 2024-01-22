@@ -4,10 +4,24 @@
 \alias{eco.plotLocal}
 \title{eco.plotLocal}
 \usage{
-eco.plotLocal(x, interactivePlot = TRUE, multi = c("d3heatmap", "ggplot"),
-  significant = TRUE, alpha = 0.05, rescaled = FALSE, limits = NULL,
-  title = NULL, z.name = NULL, grp = NULL, vertical = TRUE,
-  legend = TRUE, n = 4, nrow = 2, byrow = TRUE, ...)
+eco.plotLocal(
+  x,
+  interactivePlot = TRUE,
+  multi = c("ggplot", "d3heatmap"),
+  significant = TRUE,
+  alpha = 0.05,
+  rescaled = FALSE,
+  limits = NULL,
+  title = NULL,
+  z.name = NULL,
+  grp = NULL,
+  vertical = TRUE,
+  legend = TRUE,
+  n = 4,
+  nrow = 2,
+  byrow = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{Result of eco.lsa analysis}

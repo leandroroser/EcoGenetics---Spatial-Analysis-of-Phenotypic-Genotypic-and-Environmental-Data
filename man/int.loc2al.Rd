@@ -4,8 +4,15 @@
 \alias{int.loc2al}
 \title{INTERNAL CONVERSION TOOLS FOR GENETIC DATA}
 \usage{
-int.loc2al(X, ncod = NULL, ploidy = 2, sep.in = "", sep.out = NULL,
-  chk.names = TRUE, chk.plocod = TRUE)
+int.loc2al(
+  X,
+  ncod = NULL,
+  ploidy = 2,
+  sep.in = "",
+  sep.out = NULL,
+  chk.names = TRUE,
+  chk.plocod = TRUE
+)
 }
 \arguments{
 \item{X}{Input}

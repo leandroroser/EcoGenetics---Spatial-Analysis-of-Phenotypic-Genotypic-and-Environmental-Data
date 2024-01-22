@@ -4,10 +4,19 @@
 \alias{eco.format}
 \title{Format tool for genetic data}
 \usage{
-eco.format(data, ncod = NULL, nout = 3, ploidy = 2, sep.in = "",
-  sep.out = "", fill.mode = c("last", "first", "none"), recode = c("none",
-  "all", "column", "paired"), replace_in = NULL, replace_out = NULL,
-  show.codes = FALSE)
+eco.format(
+  data,
+  ncod = NULL,
+  nout = 3,
+  ploidy = 2,
+  sep.in = "",
+  sep.out = "",
+  fill.mode = c("last", "first", "none"),
+  recode = c("none", "all", "column", "paired"),
+  replace_in = NULL,
+  replace_out = NULL,
+  show.codes = FALSE
+)
 }
 \arguments{
 \item{data}{Genetic data frame.}

@@ -5,8 +5,15 @@
 \title{Kruskall - Wallis + Wilcoxon (Mann-Whitney U) and aov + Tukey-HSD tests 
 for an ecogen object}
 \usage{
-eco.pairtest(eco, df = c("P", "E", "A", "C"), x, test = c("wilcoxon",
-  "tukey"), adjust = "fdr", only.p = TRUE, ...)
+eco.pairtest(
+  eco,
+  df = c("P", "E", "A", "C"),
+  x,
+  test = c("wilcoxon", "tukey"),
+  adjust = "fdr",
+  only.p = TRUE,
+  ...
+)
 }
 \arguments{
 \item{eco}{Object of class "ecogen".}

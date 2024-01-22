@@ -186,7 +186,7 @@ setGeneric("eco.gsa",
              alternative <- match.arg(alternative)
              method <- match.arg(method)
              
-             if(any(class(con) == "ecoweight")) {
+             if(any(inherits(con, "ecoweight"))) {
                XY <- attr(con, "XY")
              } else {
                XY <- attr(con, "xy")
@@ -197,32 +197,31 @@ setGeneric("eco.gsa",
              }
              
              Z.class <- class(Z)
-             if(method != "JC") {
-               if(Z.class == "matrix" | Z.class == "data.frame") {
+             if (method != "JC") {
+               if (inherits(Z, "data.frame") || inherits(Z, "matrix")) {
                  c.Z <- apply(Z, 2, class)
-                 if(any(c.Z != "integer") & any(c.Z != "numeric")) {
-                   stop(paste("Non numeric data.", method, "requires numeric data"))
+                 if (any(!inherits(c.Z, c("integer", "numeric")))) {
+                   stop(paste("Non-numeric data.", method, "requires numeric data"))
                  }
-               } else if(Z.class != "numeric" & Z.class != "integer") {
-                 stop(paste("Non numeric data.", method, "requires numeric data"))
+               } else if (!inherits(Z, c("numeric", "integer"))) {
+                 stop(paste("Non-numeric data.", method, "requires numeric data"))
                }
              } else {
-               if(Z.class == "matrix" | Z.class == "data.frame") {
+               if (inherits(Z, "data.frame") || inherits(Z, "matrix")) {
                  c.Z <- apply(Z, 2, class)
-                 if(any(c.Z != "factor")) {
-                   message(paste("Note: Non-factor data present. Elements in variables will be 
-                                 treated as factor levels"))
+                 if (any(!inherits(c.Z, "factor"))) {
+                   message("Note: Non-factor data present. Elements in variables will be treated as factor levels")
                  }
-                 } else if(Z.class != "numeric" & Z.class != "integer" & Z.class != "factor" & Z.class != "character") {
-                   stop("unknown data class")
+               } else if (!inherits(Z, c("numeric", "integer", "factor", "character"))) {
+                 stop("Unknown data class")
                }
              }
              
              
-             if(!is.null(Y)) {
+             if (!is.null(Y)) {
                Y.class <- class(Y)
-               if(Y.class != "numeric" & Y.class != "integer" & Y.class != "vector") {
-                 stop("Y must me a numeric vector")
+               if (!inherits(Y, c("numeric", "integer", "vector"))) {
+                 stop("Y must be a numeric vector")
                }
              }
              

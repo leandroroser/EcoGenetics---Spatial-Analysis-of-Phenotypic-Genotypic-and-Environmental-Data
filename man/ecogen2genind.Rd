@@ -14,8 +14,6 @@ genind2ecogen(from)
 }
 \description{
 These functions export from ecogen to genind and viceversa
-
-genind2ecogen
 }
 \examples{
 

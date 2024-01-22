@@ -310,7 +310,7 @@ setGeneric("eco.cormantel",
                ext2 <- ext[2]
                
                # change of sign for "dist" data
-               if(classM == "dist") {
+               if(inherits(classM, "dist")) {
                  obs <- - obs
                }
                
@@ -345,7 +345,7 @@ colnames(tab) <- c("d.mean","obs", "lwr", "uppr", "size")
                  p.val <- result$p.val
                  
                  # change of sign for "dist" data
-                 if(classM == "dist") {
+                 if(inherits(classM, "dist")) {
                    obs <- - obs
                    expected <- - expected
                  }

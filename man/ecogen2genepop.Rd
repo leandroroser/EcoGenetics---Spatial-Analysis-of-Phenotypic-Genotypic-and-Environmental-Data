@@ -4,9 +4,18 @@
 \alias{ecogen2genepop}
 \title{Exporting an ecogen genetic data frame into Genepop format}
 \usage{
-ecogen2genepop(eco, dir = "", outName = "infile.genepop.txt", grp = NULL,
-  nout = 3, sep = "", recode = c("none", "all", "column", "paired"),
-  replace_in = NULL, replace_out = NULL, ...)
+ecogen2genepop(
+  eco,
+  dir = "",
+  outName = "infile.genepop.txt",
+  grp = NULL,
+  nout = 3,
+  sep = "",
+  recode = c("none", "all", "column", "paired"),
+  replace_in = NULL,
+  replace_out = NULL,
+  ...
+)
 }
 \arguments{
 \item{eco}{Object of class "ecogen".}

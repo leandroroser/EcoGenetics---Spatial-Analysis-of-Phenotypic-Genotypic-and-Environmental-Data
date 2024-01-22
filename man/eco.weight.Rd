@@ -4,11 +4,23 @@
 \alias{eco.weight}
 \title{Spatial weights}
 \usage{
-eco.weight(XY, method = c("circle", "knearest", "inverse", "circle.inverse",
-  "exponential", "circle.exponential"), W = NULL, d1 = 0, d2 = NULL,
-  k = NULL, p = 1, alpha = 1, dist.method = "euclidean",
-  row.sd = FALSE, max.sd = FALSE, self = FALSE, latlon = FALSE,
-  ties = c("unique", "min", "random", "ring", "first"))
+eco.weight(
+  XY,
+  method = c("circle", "knearest", "inverse", "circle.inverse", "exponential",
+    "circle.exponential"),
+  W = NULL,
+  d1 = 0,
+  d2 = NULL,
+  k = NULL,
+  p = 1,
+  alpha = 1,
+  dist.method = "euclidean",
+  row.sd = FALSE,
+  max.sd = FALSE,
+  self = FALSE,
+  latlon = FALSE,
+  ties = c("unique", "min", "random", "ring", "first")
+)
 }
 \arguments{
 \item{XY}{Matrix/data frame with projected coordinates.}

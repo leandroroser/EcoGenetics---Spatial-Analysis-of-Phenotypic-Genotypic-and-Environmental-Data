@@ -4,8 +4,15 @@
 \alias{eco.detrend}
 \title{Detrending spatial data with polynomial interpolation}
 \usage{
-eco.detrend(Z, XY, degree, center = TRUE, scale = FALSE, raw = FALSE,
-  latlon = FALSE)
+eco.detrend(
+  Z,
+  XY,
+  degree,
+  center = TRUE,
+  scale = FALSE,
+  raw = FALSE,
+  latlon = FALSE
+)
 }
 \arguments{
 \item{Z}{Data frame, matrix or vector with dependent variables.}

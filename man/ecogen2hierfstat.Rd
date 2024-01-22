@@ -4,9 +4,16 @@
 \alias{ecogen2hierfstat}
 \title{Converting an ecogen genetic data frame into a hierfstat data frame}
 \usage{
-ecogen2hierfstat(eco, pop = NULL, to_numeric = FALSE, nout = 3,
-  recode = c("all", "column", "paired"), replace_in = NULL,
-  replace_out = NULL, ...)
+ecogen2hierfstat(
+  eco,
+  pop = NULL,
+  to_numeric = FALSE,
+  nout = 3,
+  recode = c("all", "column", "paired"),
+  replace_in = NULL,
+  replace_out = NULL,
+  ...
+)
 }
 \arguments{
 \item{eco}{Object of class "ecogen".}

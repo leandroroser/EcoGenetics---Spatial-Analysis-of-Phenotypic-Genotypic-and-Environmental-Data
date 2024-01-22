@@ -88,7 +88,7 @@ test_that("eco.gsa works", {
   expect_true(class(global.C) == "eco.gsa")
   expect_true(class(global.Ixy) == "eco.gsa")
   expect_true(class(jc) == "eco.gsa")
-  expect_true(class(eco.plotGlobal(jc))[1] == "plotly")
+  expect_true(class(eco.plotGlobal(jc, interactivePlot = TRUE))[1] == "plotly")
   expect_true(class(eco.plotGlobal(jc, interactivePlot = FALSE))[2] == "ggplot")
 })
 
@@ -129,7 +129,7 @@ test_that("eco.lsa works", {
   expect_true(class(localgeary) == "eco.lsa")
 
   expect_true(class(eco.plotLocal(localmoran))[1] == "plotly")
-  expect_true(class(eco.plotLocal(all.traits))[1] == "d3heatmap")
+  expect_true(class(eco.plotLocal(all.traits))[1] == "plotly")
   expect_true(class(eco.plotLocal(all.single.traits))[1] == "NULL")
   expect_true(class(eco.plotLocal(getis.ak))[1] == "plotly")
   expect_true(class(eco.plotLocal(getis))[1] == "plotly")

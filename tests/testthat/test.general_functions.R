@@ -148,14 +148,15 @@ test_that("eco.formula works fine", {
 test_that("eco.pairtest works fine", {
   skip_on_cran()
   t1 <- eco.pairtest(eco = eco3, df = "P", x = "structure")
-  t2 <- eco.pairtest(eco = eco3,df = "E", x = "structure")
+  t2 <- eco.pairtest(eco = eco3, df = "E", x = "structure")
   t3 <- eco.pairtest(eco = eco3, df = "P", x = "structure", only.p = FALSE)
-  t4 <- eco.pairtest(eco = eco3,df = "P", x = "structure", test = "tukey")
-  expect_true(class(t1$kruskall.test) == "matrix")
-  expect_true(class(t2$kruskall.test) == "matrix")
-  expect_true(class(t3$kruskall.test) == "matrix")
-  expect_true(class(t4$aov) == "matrix")
+  t4 <- eco.pairtest(eco = eco3, df = "P", x = "structure", test = "tukey")
+  expect_true(inherits(t1$kruskall.test, "matrix"))
+  expect_true(inherits(t2$kruskall.test, "matrix"))
+  expect_true(inherits(t3$kruskall.test, "matrix"))
+  expect_true(inherits(t4$aov, "matrix"))
 })
+
 
 
 
@@ -169,7 +170,7 @@ test_that("eco.NDVI works fine", {
   for(i in 1:4) {
     temp[[i]] <- runif(19800, 0, 254)
     temp[[i]] <- matrix(temp[[i]], 180, 110)
-    temp[[i]] <- raster(temp[[i]], crs="+proj=utm")
+    temp[[i]] <- raster(temp[[i]],  crs = "+proj=utm +zone=32")
     extent(temp[[i]])<-c(3770000, 3950000, 6810000, 6920000)
   }
   

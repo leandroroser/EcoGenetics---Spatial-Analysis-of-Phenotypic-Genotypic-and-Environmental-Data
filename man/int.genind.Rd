@@ -4,9 +4,17 @@
 \alias{int.genind}
 \title{constructor}
 \usage{
-int.genind(X, ploidy = 2, type = c("codominant", "dominant"),
-  NA.char = "NA", missing = c("0", "NA", "MEAN"),
-  missing.cells = integer(0), sep = "", ncod = NULL, removed.image)
+int.genind(
+  X,
+  ploidy = 2,
+  type = c("codominant", "dominant"),
+  NA.char = "NA",
+  missing = c("0", "NA", "MEAN"),
+  missing.cells = integer(0),
+  sep = "",
+  ncod = NULL,
+  removed.image
+)
 }
 \description{
 constructor

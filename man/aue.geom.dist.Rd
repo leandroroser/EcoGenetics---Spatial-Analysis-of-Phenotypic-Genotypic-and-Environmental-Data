@@ -4,8 +4,15 @@
 \alias{aue.geom.dist}
 \title{Weight matrices based on different geometries}
 \usage{
-aue.geom.dist(XY, geometry = c("ellipse", "square"), d = 1, a = 1,
-  b = 1, row.sd = FALSE, theta = 0)
+aue.geom.dist(
+  XY,
+  geometry = c("ellipse", "square"),
+  d = 1,
+  a = 1,
+  b = 1,
+  row.sd = FALSE,
+  theta = 0
+)
 }
 \arguments{
 \item{XY}{Matrix/data frame with projected coordinates.}
