@@ -181,11 +181,12 @@ setGeneric("eco.cormantel",
                XY <-XY[,1:2]
              } 
              
+             distancia <- dist(XY)
              if(latlon == TRUE) {
                #XY <- SoDA::geoXY(XY[,2], XY[,1], unit=1)
-               XY <- sf::st_distance(st_as_sf(XY, coords=c(2,1)))
+               distancia <- as.dist(sf::st_distance(sf::st_as_sf(XY, coords=c(2,1))))
              }
-             distancia <- dist(XY)
+
              
              #####
              
