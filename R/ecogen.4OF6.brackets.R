@@ -167,7 +167,7 @@ setMethod("[", c("ecogen", "logicalORmissing", "missing", "ANY"),
             nrow_x <- unique(nrow_x)
             
             # if empty, return an empty object
-            if(length(nrow_x == 1) && nrow(x) == 0) {
+            if(length(nrow_x) == 1 && nrow(x) == 0) {
               return(x)
             # else, check if length i is adequate
             } else {

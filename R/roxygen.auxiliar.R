@@ -6,7 +6,6 @@
 
 #'@import ggplot2
 #'@import methods
-#'@import terra
 #'@import reshape2
 #'@importFrom grDevices nclass.FD
 #'@importFrom graphics abline
