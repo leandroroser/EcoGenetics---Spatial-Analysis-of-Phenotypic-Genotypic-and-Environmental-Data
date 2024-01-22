@@ -21,7 +21,7 @@
 #' @param latlon Are the coordinates in decimal degrees format? Defalut FALSE. If TRUE,
 #' the coordinates must be in a matrix/data frame with the longitude in the first
 #' column and latitude in the second. The position is projected onto a plane in
-#' meters with the function \code{\link[SoDA]{geoXY}}.
+#' meters with the function \code{\link{geoXY}}.
 #' @param ties ties handling method for "knearest" method: "unique" (default) for counting the ties 
 #'  as an unique neighbor (i.e),
 #'  "min" for counting all the ties in a given category but each is counted as a neighbor,
@@ -298,7 +298,7 @@ setGeneric("eco.weight", function(XY,
     
   # // distance configuration
   if(latlon) {
-    XY <- SoDA::geoXY(XY[,2], XY[,1], unit=1)
+    XY <- geoXY(XY[,2], XY[,1], unit=1)
     }
   
   distancia <- as.matrix(dist(XY, method = dist.method))

@@ -19,7 +19,7 @@ the negative x axis. Note that angles 0 and 180 yield identical results.}
 \item{latlon}{Are the coordinates in decimal degrees format? Defalut FALSE. If TRUE,
 the coordinates must be in the XY matrix/data frame with longitude in the first
 column and latitude in the second. The position is projected onto a plane in
-meters with the function \code{\link[SoDA]{geoXY}}.}
+meters with the function \code{\link{geoXY}}.}
 }
 \value{
 An object of class eco.weight with a bearing weights matrix

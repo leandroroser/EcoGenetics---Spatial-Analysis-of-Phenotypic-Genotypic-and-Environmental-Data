@@ -3,7 +3,7 @@
 #' @description  This program performs a Trend Surface Analysis
 #' (Borcard et al. 2011, Legendre and Legendre 2012, Lichstein et al 2002) 
 #' for the data Z and the given coordinates, projected or in decimal degrees format,
-#' in which case will be projected with \code{\link[SoDA]{geoXY}}. 
+#' in which case will be projected with \code{\link{geoXY}}. 
 #' 
 #' @param Z Data frame, matrix or vector with dependent variables.
 #' @param XY Data frame, matrix or vector with projected coordinates (X, XY or XYZ).
@@ -15,7 +15,7 @@
 #' @param latlon Are the coordinates in decimal degrees format? Defalut FALSE. If TRUE,
 #' the coordinates must be in a data.frame/matrix with the longitude in the first
 #' column and latitude in the second. The position is projected onto a plane in
-#' meters with the function \code{\link[SoDA]{geoXY}}.
+#' meters with the function \code{\link{geoXY}}.
 #' 
 #' @return An object of class "eco.detrend" with the following slots:
 #' @return > POLY.DEG polynomial degree used in the analysis
@@ -89,7 +89,7 @@ setGeneric("eco.detrend",
                     latlon = FALSE) {
              
              if(latlon) {
-               XY <- SoDA::geoXY(XY[,2], XY[,1], unit=1)
+               XY <- geoXY(XY[,2], XY[,1], unit=1)
              }
              
              XY.scale <- scale(XY, center = center, scale = scale)

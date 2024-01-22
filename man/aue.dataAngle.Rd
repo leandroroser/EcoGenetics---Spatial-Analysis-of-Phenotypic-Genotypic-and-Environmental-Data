@@ -16,7 +16,7 @@ aue.dataAngle(XY, maxpi = FALSE, deg = FALSE, latlon = FALSE)
 \item{latlon}{Are the coordinates in decimal degrees format? Defalut FALSE. If TRUE,
 the coordinates must be in a matrix/data frame with the longitude in the first
 column and latitude in the second. The position is projected onto a plane in
-meters with the function \code{\link[SoDA]{geoXY}}.}
+meters with the function \code{\link{geoXY}}.}
 }
 \description{
 Angles for an XY coordinates matrix

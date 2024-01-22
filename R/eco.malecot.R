@@ -51,7 +51,7 @@
 #' @param latlon Are the coordinates in decimal degrees format? Default FALSE. If TRUE,
 #' the coordinates must be in a matrix/data frame with the longitude in the first
 #' column and latitude in the second. The position is projected onto a plane in
-#' meters with the function \code{\link[SoDA]{geoXY}}.
+#' meters with the function \code{\link{geoXY}}.
 #' @param angle direction for computation of a bearing correlogram (angle in degrees between 0 and 180).
 #' Default NULL (omnidirectional).
 #' 
@@ -354,7 +354,7 @@ eco.malecot <- function(eco,
   } 
   
   if(latlon == TRUE) {
-    XY <- SoDA::geoXY(XY[,2], XY[,1], unit=1)
+    XY <- geoXY(XY[,2], XY[,1], unit=1)
   } 
   
   distancia <- dist(XY)

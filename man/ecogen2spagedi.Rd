@@ -63,7 +63,7 @@ option is Freedman-Diaconis method (Freedman and Diaconis, 1981).}
 \item{latlon}{Are the coordinates in decimal degrees format? Defalut FALSE. If TRUE,
 the coordinates must be in a matrix/data frame with the longitude in the first
 column and latitude in the second. The position is projected onto a plane in
-meters with the function \code{\link[SoDA]{geoXY}}.}
+meters with the function \code{\link{geoXY}}.}
 
 \item{to_numeric}{Recode the genetic data into numeric format? If TRUE, 
 the functions performs the correction via \code{\link{eco.format}}.
