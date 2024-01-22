@@ -10,7 +10,7 @@
 #' @param latlon Are the coordinates in decimal degrees format? Defalut FALSE. If TRUE,
 #' the coordinates must be in the XY matrix/data frame with longitude in the first
 #' column and latitude in the second. The position is projected onto a plane in
-#' meters with the function \code{\link[SoDA]{geoXY}}.
+#' meters with the function \code{\link{geoXY}}.
 #' @details This program computes an angular weights object (AW) 
 #' (or a list of AW). If a weights object is passed as argument
 #' ("con") the program computes an AW with this element.
@@ -102,7 +102,7 @@ setGeneric("eco.bearing", function(con, theta, XY = NULL, latlon = FALSE) {
   } else {
     rnames <- rownames(XY)
     if(latlon) {
-    XY <- SoDA::geoXY(XY[,2], XY[,1], unit=1)
+    XY <- geoXY(XY[,2], XY[,1], unit=1)
     rownames(XY) <- rnames
     }
     N <- nrow(XY)

@@ -31,7 +31,7 @@ For longitude-latitude data in decimal degrees format, use the option latlon = T
 \item{latlon}{Are the coordinates in decimal degrees format? Defalut FALSE. If TRUE,
 the coordinates must be in a data.frame/matrix with the longitude in the first
 column and latitude in the second. The position is projected onto a plane in
-meters with the function \code{\link[SoDA]{geoXY}}.}
+meters with the function \code{\link{geoXY}}.}
 }
 \value{
 An object of class "eco.detrend" with the following slots:
@@ -60,7 +60,7 @@ section below.
 This program performs a Trend Surface Analysis
 (Borcard et al. 2011, Legendre and Legendre 2012, Lichstein et al 2002) 
 for the data Z and the given coordinates, projected or in decimal degrees format,
-in which case will be projected with \code{\link[SoDA]{geoXY}}.
+in which case will be projected with \code{\link{geoXY}}.
 }
 \examples{
 \dontrun{

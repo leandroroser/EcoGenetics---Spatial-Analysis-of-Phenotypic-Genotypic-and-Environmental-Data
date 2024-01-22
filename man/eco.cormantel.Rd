@@ -77,7 +77,7 @@ adjustment of P-values? Defalult TRUE.}
 \item{latlon}{Are the coordinates in decimal degrees format? Defalut FALSE. If TRUE,
 the coordinates must be in a matrix/data frame with the longitude in the first
 column and latitude in the second. The position is projected onto a plane in
-meters with the function \code{\link[SoDA]{geoXY}}.}
+meters with the function \code{\link{geoXY}}.}
 
 \item{angle}{for computation of bearing correlogram (angle between 0 and 180).
 Default NULL (omnidirectional).}

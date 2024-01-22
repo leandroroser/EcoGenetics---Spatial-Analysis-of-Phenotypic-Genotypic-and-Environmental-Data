@@ -3,3 +3,11 @@
 .RData
 EcoGenetics.Rcheck
 .local
+
+# Ignore compiled Fortran files
+*.o
+*.so
+*.dll
+*.dylib
+*.a
+*.mod

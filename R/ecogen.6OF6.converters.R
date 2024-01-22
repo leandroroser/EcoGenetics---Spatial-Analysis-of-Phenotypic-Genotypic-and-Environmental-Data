@@ -681,7 +681,7 @@ setGeneric("ecogen2hierfstat",
 #' @param latlon Are the coordinates in decimal degrees format? Defalut FALSE. If TRUE,
 #' the coordinates must be in a matrix/data frame with the longitude in the first
 #' column and latitude in the second. The position is projected onto a plane in
-#' meters with the function \code{\link[SoDA]{geoXY}}.
+#' meters with the function \code{\link{geoXY}}.
 #' @param to_numeric Recode the genetic data into numeric format? If TRUE, 
 #' the functions performs the correction via \code{\link{eco.format}}.
 #' Additional formatting parameters can be passed to this function.
@@ -795,7 +795,7 @@ setGeneric("ecogen2spagedi",
     
     xy <- eco@XY[,1:2]
     if(latlon) {
-      dist(SoDA::geoXY(xy[,2], xy[,1], unit=1))
+      dist(geoXY(xy[,2], xy[,1], unit=1))
     }
     
     input <- int.break(XY = xy, 
