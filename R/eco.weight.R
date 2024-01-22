@@ -297,12 +297,11 @@ setGeneric("eco.weight", function(XY,
     
     
   # // distance configuration
-  if(latlon) {
+  distancia <- dist(XY)
+  if(latlon == TRUE) {
     #XY <- SoDA::geoXY(XY[,2], XY[,1], unit=1)
-    XY <- sf::st_distance(st_as_sf(XY, coords=c(2,1)))
-    }
-  
-  distancia <- as.matrix(dist(XY, method = dist.method))
+    distancia <- as.dist(sf::st_distance(sf::st_as_sf(XY, coords=c(2,1))))
+  }
 
   #####
   
