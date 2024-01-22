@@ -1,4 +1,4 @@
-# EcoGenetics 1.2.1-5
+# EcoGenetics 1.2.1-6
 
 
 | [Linux][lin-link] | [Windows][win-link] | [R][R-link]          |[Downloads][dow-link]|
