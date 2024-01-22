@@ -1,7 +1,7 @@
 Package: EcoGenetics
 Type: Package
 Title: Management and Exploratory Analysis of Spatial Data in Landscape Genetics
-Version: 1.2.1-5
+Version: 1.2.1-6
 Date: 2024-01-23
 Authors@R: c(person(given = "Leandro", family = "Roser", role = c("aut", "cre"), email = "learoser@gmail.com"), person(given = "Juan", family = "Vilardi", role = "aut"),  person(given = "Beatriz", family = "Saidman", role = "aut"), person(given = "Laura", family = "Ferreyra", role = "aut"),person(given = "Helene", family = "Wagner", role = "aut"), person(given = "Thibaut", family = "Jombart", role = "ctb", comment = "author of included adegenet code"), person(given = "Winston", family = "Chang", role = "ctb", comment = "author of the multiplot function included under the name grf.multiplot"))
 Maintainer: Leandro Roser <learoser@gmail.com>
