@@ -8,7 +8,6 @@
 #'@import methods
 #'@import terra
 #'@import reshape2
-#'@importFrom SoDA geoXY
 #'@importFrom grDevices nclass.FD
 #'@importFrom graphics abline
 #'@importFrom graphics hist

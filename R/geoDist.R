@@ -23,7 +23,7 @@
                     as.double(lat1),as.double(lon1),
                     as.double(lat2),as.double(lon2),
                     dist = double(nok), as.integer(nok),
-                    PACKAGE = "SoDA")$dist
+                    PACKAGE = "EcoGenetics")$dist
     if(NAOK && any(nas)) {
       value <- rep(NA, n)
       value[ok] <- res
