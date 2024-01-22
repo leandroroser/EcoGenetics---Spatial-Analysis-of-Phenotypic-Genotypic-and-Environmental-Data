@@ -13,9 +13,9 @@ LazyData: true
 Depends: R (>= 3.0), methods
 Imports: edgebundleR, ggplot2, grid, htmlwidgets, igraph,
         jsonlite, magrittr, networkD3, party, pheatmap, plotly, raster,
-        reshape2, rkt, sp, parallel, doParallel, foreach, SoDA, terra
+        reshape2, rkt, sp, sf, parallel, doParallel, foreach, terra
 Remotes:
-    github::cran/SoDA, github::dyerlab/gstudio
+    github::dyerlab/gstudio
 Suggests: 
     adegenet,
     testthat,
